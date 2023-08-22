@@ -1,0 +1,231 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[top=1cm,bottom=1cm,left=2cm,right=2cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Andreas}{Wegscheider}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+\address{40, Impasse du Joran}{01280 Pr\'evessin-Moens}{France}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+33 6 07 97 60 42}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{a.wegscheider7141@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{andreas-wegscheider-371a051a1}                        % optional, remove / comment the line if not wanted
+%\social[xing]{john\_doe}                           % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+\social[github]{awegsche}                              % optional, remove / comment the line if not wanted
+%\social[gitlab]{jdoe}                              % optional, remove / comment the line if not wanted
+%\social[skype]{jdoe}                               % optional, remove / comment the line if not wanted
+%\extrainfo{}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{About Me}
+
+PhD in Accelerator Physics with 7 years experience in scientific research.
+Working at CERN, an international research institute, hosting various particle accelerators,
+including the LHC, the world's largest accelerator.
+Collaborating with researchers around the world,
+including Europe, North America and Southeast Asia.
+Using sophisticated theoretical models and large scale data analysis to operate and optimise
+high energy particle accelerators such as the LHC at CERN.
+Designing and performing extensive simulations on compute farms and on GPUs to optimise our models and methods.
+Contributing to our various state-of-the-art controls and measurement software solutions written in
+Python, C++, Java, C and Fortran.
+Passionate about Physics, Computing and Optimisation.
+
+\section{Experience}
+
+\cventry{2021--ongoing}{Accelerator Physicist}{CERN}{Geneva}{}{%
+Postdoctoral Fellow in Accelerator Physics.
+Conducting rigourous scientific research on various topics centered around optimisation and control
+of high energy particle accelerators, such as:
+\begin{itemize}
+\item Design and development of measurement methods for optimisation of accelerator beam dynamics
+    to ensure and improve operational control and performance of various accelerators (CERN and external)
+    \begin{itemize}
+        \item Theoretical design of new methods, using expert knowledge of accelerator physics,
+            the technical details of the accelerators at CERN and high mathematical and analytical skills.
+        \item Conception of dedicated simulation studies to optimise existing methods, using compute farms
+            to perform the simulations and large scale data analysis to evaluate the results.
+        \item Implementation of novel methods in our Python code base,
+            maintenance and optimisation of existing algorithms.
+        \item Major contribution to the operation of the accelerators.
+    \end{itemize}
+\item Training and supervision of students and junior colleagues.
+\item Maintenance of cutting-edge software solutions crucial for measurement and correction of accelerator beam dynamics
+    using Python and Java.
+\end{itemize}}
+\vspace{0.5em}
+
+\cventry{2017--2021}{PhD Student}{CERN}{Geneva}{}{%
+    Working on the project of my PhD thesis, contributing to commissioning and operation of the LHC
+    as full-time employee. Tasks included:
+    \begin{itemize}
+        \item Conception of novel methods to improve the real-time measurement of imperfections in the running machine
+            and corresponding correction mechanisms. Improvement of existing methods. Conception and execution of simulation
+            studies to optimise those methods.
+        \item Implementation, optimisation and maintenance of computer algorithms to perform the measurements.
+        \item Collaboration with multiple external institutes in various European countries and Japan, as well
+            as with different teams of diverse background inside CERN, such as Operators and the Machine Protection group.
+        \item Presentation of achieved work in international conferences.
+            Publications in the most prominent scientific journals of accelerator physics.
+    \end{itemize}
+    }
+\vspace{0.5em}
+
+\cventry{2016--2017}{Technical Student}{CERN}{Geneva}{}{%
+    Working on accelerator beam optics. Implementation and Optimisation of measurement algorithms.
+    Maintenance of Python code base.
+}
+\vspace{0.5em}
+
+\cventry{2013--2016}{Teaching Assistant}{Ludwig-Maximilians-Universit\"at}{Munich}{}{%
+    Guiding tutorial sessions for undergraduate students in Physics, Mathematics and Computer Science.
+    Drafting and correcting homework assignments and exams.
+    }
+
+    \newpage
+\section{Education}
+\cventry{2017--2021}{PhD Accelerator Physics}{Hamburg University}{Hamburg}{}%
+    {Title:~%
+    \textit{Development of Measurement Methods for Circular Accelerators}
+    }  % arguments 3 to 6 can be left empty
+\cventry{2013--2017}{MSc Theoretical and Mathematical Physics}{Ludwig-Maximilians-Universit\"at}{Munich}{}{%
+    Conducting purely theoretical research in Quantum Field Theory.
+    This involved fundamental literature research and rigorous mathematical derivations.
+    }  % arguments 3 to 6 can be left empty
+    \cventry{2010--2013}{BSc Physics}{Ludwig-Maximilians-Universit\"at}{Munich}{}{
+        Theoretical and literature research in Theoretical Physics and Mathematics.
+    }
+
+
+\section{Languages}
+\cvitemwithcomment{German}{native}{}
+\cvitemwithcomment{English}{C2}{}
+\cvitemwithcomment{French}{C1}{}
+Interest and basic knowledge in various other languages, including Modern Greek and Japanese
+
+
+\section{Programming Languages}
+\cvitem{Good/Expert Level}%
+{%
+Python, C++, Rust, Java \\
+    \emph{Used daily for development of our main tools at CERN and supporting simulations
+    as well as in hobby projects.} 
+}
+\cvitem{Intermediate Level}%
+{%
+    C, C\#, Fortran \\ 
+    \emph{Used mainly for maintenance of CERN's legacy code.}
+}
+
+\cvitem{}{ High interest in learning new programming languages and paradigms (beginner level):
+Zig, Haskell, D}
+
+
+%\section{Interests}
+%\cvitem{hobby 1}{Description}
+%\cvitem{hobby 2}{Description}
+%\cvitem{hobby 3}{Description}
+%
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+%
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+%\section{References}
+%\begin{cvcolumns}
+%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%% \clearpage
+%% %-----       letter       ---------------------------------------------------------
+%% % recipient data
+%% \recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%% \date{January 01, 1984}
+%% \opening{Dear Sir or Madam,}
+%% \closing{Yours faithfully,}
+%% \enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%% \makelettertitle
+%% 
+%% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+%% 
+%% Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+%% 
+%% Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+%% 
+%% Albert Einstein discovered that $e=mc^2$ in 1905.
+%% 
+%% \[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+%% 
+%% \makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.

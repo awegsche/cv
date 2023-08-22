@@ -1,0 +1,138 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[top=1cm, left=1.5cm, right=1.5cm, bottom=2cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Andreas}{Wegscheider}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+\address{40, Impasse du Joran}{01280 Pr\'evessin-Moens}{France}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+33 6 07 97 60 42}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{a.wegscheider7141@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{andreas-wegscheider-371a051a1}                        % optional, remove / comment the line if not wanted
+%\social[xing]{john\_doe}                           % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+\social[github]{awegsche}                              % optional, remove / comment the line if not wanted
+%\social[gitlab]{jdoe}                              % optional, remove / comment the line if not wanted
+%\social[skype]{jdoe}                               % optional, remove / comment the line if not wanted
+%\extrainfo{}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{HR, CERN}{}
+\date{}
+\opening{Dear Sir or Madam,}
+\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+\textbf{About Me:}
+Accelerator Physicist from Germany. I did my undergraduate studies at the Ludwigs-Maximilian-Universit\"at
+in Munich where I enrolled into the elite MSc program "Theoretical and Mathematical Physics". 
+For the past 7 years I worked at CERN, in the ABP group, as Technical Student, Doctoral Student with the University of Hamburg,
+graduating in 2021.
+After that, I continued my work at CERN as Applied Fellow in the LNO section.
+
+\textbf{Motivation for working at CERN:}
+Working at CERN for the past 7 years was a challenging but fullfilling experience.
+I have acquired many skills in this time, CERN has made me grow, both professionally and as a person,
+carrying out a multitude of interdisciplinary tasks.
+Not many other institutes provide similar opportunities to the extend CERN does.
+I am ready to bring this to the next level and I see a position as staff scientist at CERN is the natural
+continuation of my career.
+Finally, the international and mutli-cultural environment at CERN allowed me to thrive and to grow
+as a person. Although academia in general is very international, no other place is at this level.
+
+\textbf{Competencies and experiences relevant to the role:}
+
+    \emph{General experience as accelerator physicist:}
+    As PhD in accelerator physics I have deep knowledge of the topic and underlying principles.
+    I have a record of publications in relevant journals and conducted scientific research, performing
+    theoretical work, simulations and dedicated experiments, using beam-based measurements to
+    detect imperfections in the running machine.
+
+    \emph{Optics Models and Repositories:}
+    I have contributed to and maintained the optics model repository for our measurement and
+    simulation toolkit, synchronising it with CERN's official accelerator models (mainly LHC but also injectors)
+    and extending it to our needs.
+    This required a deep understanding of the official repository and efficient communication with
+    its maintainers and the OP group.
+
+    \emph{Study and optimisation of operational conditions:}
+    As part of the optics measurements and corrections (OMC) team at CERN, I developed novel methods
+    to measure linear beam optics in the LHC, improved existing methods and implemented them in our
+    code base. I did extensive numerical simulations to evaluate and optimise the measurement methods.
+    Some of those measurement methods are now routinely used in commissioning and machine development
+    studies in the LHC and injectors and contribute to the general task of improving operational conditions.
+
+    \emph{Work on software applications for accelerator optics:}
+    I have implemented and improved various optics measurement algorithms used for various accelerators
+    at CERN. Part of my work as doctoral student and a major part of my work as fellow was the
+    maintenance and optimisation of our software tools for measurement, simulation, analysis and
+    correction of beam optics, written in Python and Java.
+    I recently started contributing to the beam dynamics simulation code MAD-X.
+
+    \emph{Experience with accelerator codes:}
+    In order to perform my simulations and extend our model repository, I routinely used MAD-X.
+    I used SAD to adapt our methods to the accelerators JPARC and SuperKEKB, and to perform beam
+    based measurements on those accelerators.
+
+\textbf{Behavioural competencies:}
+Over the past 12 years, I have learned to work efficiently with people from different cultural backgrounds.
+I know how to draft technical reports and write scientific articles.
+I can efficiently communicate complex matters in German, English or French
+and I am very interested in languages in general.
+I can work independently and as part of a team.
+Having worked on various projects at the same time with conflicting deadlines and conferences abroad
+I have learned to structure my work, prioritise tasks, and, if inevitable, cancel assignments and
+take responsibility for it.
+
+\vfill
+\makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
